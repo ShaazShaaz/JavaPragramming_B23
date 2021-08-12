@@ -16,6 +16,7 @@ public class Circle {
 
      */
 
+
     public double radius,diameter;
     //public static double PI=3.14;// only 1 copy of static variable will be shared by all circle objects
     public void setInfo(double radius){
