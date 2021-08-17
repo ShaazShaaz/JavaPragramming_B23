@@ -9,7 +9,7 @@ public class DateTimeFormatting {
     public static void main(String[] args) {
         // if u wanna change the default pattern to MM/dd/YYYY
         // use DataTimeFormatter class
-        DateTimeFormatter DF=DateTimeFormatter.ofPattern("MM/dd/YYYY E");// EEEE will print out full dayname
+        DateTimeFormatter DF=DateTimeFormatter.ofPattern("M/d/YYYY E");// EEEE will print out full dayname
         LocalDate today=LocalDate.now();
         System.out.println(today);
 
@@ -17,9 +17,9 @@ public class DateTimeFormatting {
         System.out.println(today.format(DF));
 
         // in case of customizing time formats
-        DateTimeFormatter TF=DateTimeFormatter.ofPattern("hh:mm a");
+        DateTimeFormatter TF=DateTimeFormatter.ofPattern("h:mm a");
         LocalTime currentTime=LocalTime.now();
-        System.out.println(currentTime);// default- 12:08:21.069
+        System.out.println(currentTime.plusHours(2));// default- 12:08:21.069
         System.out.println(currentTime.format(TF));
 
         LocalTime time1=LocalTime.of(17,25);
@@ -29,7 +29,7 @@ public class DateTimeFormatting {
 
         // use the LocalDate & Time get the date and time in the following format:
         //            Tuesday, 1:00 pm, Nov/24/2020
-        DateTimeFormatter DTF=DateTimeFormatter.ofPattern("EEEE, hh:mm a, MMM/dd/YYYY");
+        DateTimeFormatter DTF=DateTimeFormatter.ofPattern("EEEE, hh:mm a | MMM/dd/YYYY");
         LocalDateTime a=LocalDateTime.now();
         System.out.println(a.format(DTF));
 

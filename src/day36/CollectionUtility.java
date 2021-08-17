@@ -49,6 +49,7 @@ public class CollectionUtility {
          result.removeIf(p-> Collections.frequency(result,p)!=1);
         System.out.println(unique2);
         System.out.println(result);
+        System.out.println("+++++++++++++++++++");
 
         int max=Collections.max(list);
         int min=Collections.min(list);

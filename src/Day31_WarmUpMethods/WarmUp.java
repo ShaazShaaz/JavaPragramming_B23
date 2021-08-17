@@ -25,14 +25,7 @@ public class WarmUp {
        String result=frequencyOfCharacters(s3);
         System.out.println(result);
 
-
-
-
-
     }
-
-
-
 
    // remove duplicates
     public static String removeDupl (String str){

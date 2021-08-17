@@ -13,6 +13,8 @@ public class Birthday {
         LocalDate today=LocalDate.now();
         int age=today.getYear()-DoB.getYear();
 
+
+
         if (DoB.getMonthValue()==today.getMonthValue() && DoB.getDayOfMonth()==today.getDayOfMonth()){
             System.out.println("Today is your birthday. Happy Birthday!");
             System.out.println("today you are "+age+" years old!");

@@ -15,6 +15,7 @@ public class ArrayListMethods {
         // to replace eggs with masks  set()
         groceryList.set(0,"masks");
         groceryList.set(3,"toilet paper");
+        System.out.println(groceryList.get(1));
         System.out.println(groceryList);
         System.out.println("------------------------");
 
@@ -23,7 +24,8 @@ public class ArrayListMethods {
         System.out.println(groceryList);
 
         // to remove an element by passing the object: remove(object)
-        boolean r1=groceryList.remove("water");
+       boolean r1= groceryList.remove("water");
+
         System.out.println(groceryList);
         System.out.println(r1);
         System.out.println("--------------------------");
@@ -74,9 +76,11 @@ public class ArrayListMethods {
 
         // contains() method
         boolean hasToiletPaper=groceryList.contains("toilet paper");
+        boolean has2=list.contains(10);
         boolean hasToiletPaper2=groceryList.indexOf("toilet paper")>=0;
         System.out.println(hasToiletPaper);
         System.out.println(hasToiletPaper2);
+        System.out.println(has2);
         System.out.println("----------------------------");
 
         //remove duplicates

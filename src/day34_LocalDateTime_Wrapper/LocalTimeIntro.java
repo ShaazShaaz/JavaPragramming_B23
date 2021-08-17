@@ -9,6 +9,7 @@ public class LocalTimeIntro {
         System.out.println(now);
         LocalTime breakTime=now.plusMinutes(15);
         System.out.println(breakTime);
+        System.out.println(breakTime.getMinute());
 
         LocalTime quizDueBy=breakTime.plusMinutes(20);
         System.out.println(quizDueBy);

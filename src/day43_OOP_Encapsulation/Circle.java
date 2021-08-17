@@ -1,6 +1,7 @@
 package day43_OOP_Encapsulation;
 
 public class Circle {
+
     /*
     Create a class named Circle
             Private variables:
@@ -16,7 +17,12 @@ public class Circle {
                 toString()
      */
     private double radius,diameter;
-    private static double PI=3.14;
+    private static final double PI=3.14; // final so that the value is never changed
+    /*static {
+        PI=4.12;
+    }
+    // gives error cuz it shouldn't change
+     */
 
     public double getRadius(){
         return radius;

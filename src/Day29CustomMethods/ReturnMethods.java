@@ -6,6 +6,7 @@ public class ReturnMethods {
        String reverseStr =reverse(str);
        boolean isPalindrome=isPalindrome(str);
         System.out.println("is palindrome= "+isPalindrome);
+
     }
 
 

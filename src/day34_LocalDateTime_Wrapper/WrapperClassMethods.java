@@ -3,12 +3,15 @@ package day34_LocalDateTime_Wrapper;
 public class WrapperClassMethods {
     public static void main(String[] args) {
         String str="123";
-       // int num=Integer.parseInt(str); converts String to int
+       // int num=Integer.parseInt(str);// converts String to int
+       // System.out.println(num);
         int num=Integer.valueOf(str); // unboxing, converts str into Integer Wrapper class first
 
         System.out.println(num-1);
         Integer num2=Integer.parseInt(str); // autoboxing
         int num3=Integer.parseInt(str); // will return int value cuz none are Wrapper class
+        System.out.println(num2);
+        System.out.println(num3);
 
         String str2="true";
         boolean r1=Boolean.parseBoolean(str2);

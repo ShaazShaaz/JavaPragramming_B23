@@ -9,6 +9,8 @@ public class Str {
         System.out.println(c);
 
         */
+
+
         String s="The game was tied at 2-2";
         String s2=s.substring(5);
         int index1=s.indexOf("game");
