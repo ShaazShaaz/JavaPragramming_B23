@@ -32,6 +32,8 @@ public class Car {
         this.miles = miles;
     }
     public void start(){
+        System.out.println("Insert the key");
+        System.out.println("Twist it to ignition");
         System.out.println(brand+" "+model+" is starting");
     }
     public void drive(){
